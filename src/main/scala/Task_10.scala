@@ -7,7 +7,6 @@ object Task_10 {
         print("   ")
         print(s"$i")
       }
-
     }
   }
 }

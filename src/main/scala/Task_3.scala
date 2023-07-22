@@ -1,6 +1,6 @@
 import scala.io.StdIn
 
-object Big_3var {
+object Task_3 {
   def main(args:Array[String]):Unit= {
     println("Provide 3 variables to find biggest number : ")
     var num1 = StdIn.readInt()

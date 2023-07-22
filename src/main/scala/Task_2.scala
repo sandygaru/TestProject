@@ -1,5 +1,5 @@
 import scala.io.StdIn
-object Cel_fah {
+object Task_2 {
   def main(args:Array[String]):Unit= {
     println("Please provide input in Celsius(\u00B0C) :- ")
     var cel = StdIn.readInt()
