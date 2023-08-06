@@ -1,0 +1,7 @@
+val numbers: Array[Int] = Array(5, 3, 1, 4, 2)
+numbers.foreach(println) // Print all elements
+val squaredNumbers: Array[Int] = numbers.map(number => number * number) // Square
+each element
+val filteredNumbers: Array[Int] = numbers.filter(_ % 2 == 0) // Filter even numbers
+val sortedNumbers: Array[Int] = numbers.sortBy(number => -number) // Sort in
+descending order
