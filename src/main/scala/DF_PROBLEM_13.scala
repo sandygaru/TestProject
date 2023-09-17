@@ -13,8 +13,6 @@ object DF_PROBLEM_13 {
     val df = List(("santhosh29498@gmail.com"), ("saisanthosh@outlook.com"), null,("kaarun")).toDF("email")
 
 
-
-
     df.select(col("email"),
       when(col("email").isNull, "Unknown")
       .when(col("email").contains("@"), sql.functions.split(col("email"),"@").getItem(0))
