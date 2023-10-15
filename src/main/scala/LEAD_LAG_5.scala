@@ -1,4 +1,3 @@
-//Finding the minimum, maximum, and average temperature for each city in a weather dataset.
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.expressions.Window

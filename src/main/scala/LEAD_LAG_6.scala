@@ -1,4 +1,3 @@
-//Finding the minimum, maximum, and average temperature for each city in a weather dataset.
 
 import org.apache.spark.sql
 import org.apache.spark.sql.SparkSession
@@ -23,7 +22,7 @@ object LEAD_LAG_6 {
     val windowspec = Window.orderBy("id1")
 
     val prev_sal_per = data
-      .withColumn("PrevSalary1", lag("salary", 3).over(windowspec))
+      .withColumn("PrevSalary1", lag( "salary", 3).over(windowspec))
       .withColumn("PrevSalary2", lag("salary", 2).over(windowspec))
       .withColumn("PrevSalary3", lag("salary", 1).over(windowspec))
 
