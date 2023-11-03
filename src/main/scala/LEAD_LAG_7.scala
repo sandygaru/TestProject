@@ -19,7 +19,7 @@ object LEAD_LAG_7 {
 
     // Calculate the lead and lag of salary within each group of employees (grouped by name) ordered by id.
 
-    val windowspec = Window.orderBy("id1").partitionBy("name")
+    val windowspec = Window.orderBy(col("id1").asc).partitionBy("name")
 
     val lead_lag_sal = data
       .withColumn("lead_sal", lead( "salary", 1).over(windowspec))

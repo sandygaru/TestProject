@@ -16,7 +16,7 @@ object rank {
       ("Electronics", "Tablet", 1200),
       ("Clothing", "Shirt", 800),
       ("Clothing", "Jeans", 1000),
-      ("Clothing", "Dress", 600)
+      ("Clothing", "Dress", 1000)
     ).toDF("Category", "Product", "SalesAmount")
 
     //average rating for each movie
